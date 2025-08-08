@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Cuddle Up Vancouver – Healing with Professional Cuddling Services</title>
+  <meta name="description" content="Learn more about Cuddle Up Vancouver’s professional cuddle therapist and the benefits of platonic touch.">
+  <link rel="icon" href="images/Cuddling%20Icon.JPG" type="image/jpg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: #2d6a97;
+    }
+
+    body > footer {
+      margin-top: auto;
+    }
+
+    .about-header {
+      background-color: #2d6a97;
+      color: white;
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    .about-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .about-subheader {
+      color: #eff3f7;
+      font-size: 1.2rem;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto 20px;
+      font-family: Arial, sans-serif;
+      padding: 0 20px;
+    }
+
+      .about-subheader a {
+      font-weight: bold;
+      text-decoration: underline;
+      color: white;
+    }
+
+    .about-subheader-tight {
+  margin-bottom: 10px;
+      }
+
+    /* Side-by-side section */
+    .about-intro {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto 20px;
+      padding: 0 20px;
+      color: #eff3f7;
+      font-family: Arial, sans-serif;
+    }
+
+    .about-intro img {
+      flex: 1;
+      max-width: 50%;
+      height: auto;
+      border: 2px solid #eff3f7;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    .about-intro-text {
+      flex: 1;
+      min-width: 250px;
+      line-height: 1.4;
+      font-size: 1.125rem;
+    }
+    
+.credentials-list {
+  list-style-type: disc;
+  list-style-position: inside;  /* Default, bullets outside the content block */ 
+  margin-top: 0.5em;
+  margin-left: 1.5em;            /* Adjust the indent to match guideline list indentation */
+  padding-left: 0;
+  line-height: 1.4;              /* Keeps spacing tight but readable */
+}
+    
+    /* Stack vertically & center content on mobile */
+    @media (max-width: 768px) {
+      .about-intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .about-intro img {
+        max-width: 100%;
+      }
+      .about-intro-text {
+        max-width: 100%;
+      }
+    }
+
+    .about-links {
+      max-width: 900px;
+      margin: 0 auto 10px;
+      padding: 0 20px;
+      color: #eff3f7;
+      font-size: 1.2rem;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .about-links a {
+      font-weight: bold;
+      text-decoration: underline;
+      color: white;
+    }
+
+    .about-section {
+      background-color: #2d6a97;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      box-sizing: border-box;
+    }
+
+    .about-container {
+      background: #eff3f7;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 1000px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      color: #1b4a70;
+      font-family: Arial, sans-serif;
+      font-size: 1.125rem;
+      line-height: 1.6;
+    }
+
+    .about-container h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .benefits-columns {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      font-size: 1rem;
+    }
+
+    .benefits-columns ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .benefits-columns li::before {
+      content: "✧ ";
+      color: #2d6a97;
+    }
+
+    footer {
+      background-color: #2d6a97;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-overlay">
+    <div class="loading-content">
+      <img src="images/CuddleUpVancouver%20Logo.png" alt="Cuddle Up Vancouver Logo" class="loading-logo" />
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-title">
+      <img src="images/CuddleUpVancouver%20Logo.png" alt="Cuddle Up Vancouver Logo" class="logo" />
+      <div class="site-title">
+        <span class="title-line1">Cuddle Up</span>
+        <span class="title-line2">Vancouver</span>
+      </div>
+    </div>
+    <div class="hamburger">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="guidelines.html">Guidelines</a></li>
+      <li><a href="FAQs.html">FAQs</a></li>
+      <li><a href="rates.html">Rates</a></li>
+      <li><a href="contact.html" class="book-now-btn">Book Now!</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Header -->
+  <section class="about-header">
+    <h1>About</h1>
+  </section>
+
+  <!-- Standalone first paragraph -->
+  <div class="about-subheader">
+    Platonic cuddle therapy is at the intersection of therapeutic touch and emotional care. It doesn’t fall under regulated massage therapy or regulated mental health services, but has instead emerged as a distinct offering within the broader field of wellness, with <a href="#benefits">numerous health benefits</a>.
+  </div>
+
+  <!-- Side-by-side image and text -->
+  <div class="about-intro">
+    <img src="images/Cuddle1_small.bmp" alt="Cuddle session example">
+    <div class="about-intro-text">
+      I’m Kathy, here to provide you with the therapeutic benefits of platonic cuddling! Snuggling is a great way to brighten up your day. I’m a young, fit, active woman offering professional, affectionate cuddle sessions. My goal is to make you feel happy, comfortable, and accepted while you enjoy the healing powers of platonic closeness!
+      <br><br>
+      While cuddling, you can feel free to tell me anything confidentially. Many clients are struggling with a breakup, loss, health issues, or other concerns. I am supportive, caring, and most importantly judgment-free!
+      <br><br>
+      My credentials are as follows:
+      <ul class="credentials-list">
+        <li>Bachelor of Arts in Psychology</li>
+        <li>Crisis Line work experience</li>
+        <li>Integrative Trauma Practitioner certification</li>
+        <li>Yoga Teacher Certification (YTT-200)</li>
+        <li>Professional Cuddler Certification</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Links paragraph -->
+  <div class="about-links">
+    <a href="https://www.cbc.ca/news/canada/cuddling-services-on-rise-canada-1.3448154">Click here to read news about paid cuddling services in general.</a><br/>
+    Scroll down to learn more about the experience of a cuddle session, the benefits of cuddling, and explore the rest of this website to clarify what to expect when cuddling with me!
+  </div>
+
+  <!-- About Section with Video and Benefits -->
+  <section class="about-section">
+    <div class="about-container">
+      <h2>Watch: Cuddle Up Trailer</h2>
+      <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; margin-bottom: 20px;">
+        <iframe
+          src="https://www.youtube.com/embed/iQXAq9jbJkc"
+          title="YouTube video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px;">
+        </iframe><br/><br/>
+      </div>
+    </div>
+
+    <div class="about-subheader about-subheader-tight">
+In today’s world, many of us are finding ourselves increasingly distanced from one of our most basic human needs: safe, nurturing touch. Shifts in how we use technology and changes in the ways we connect, date, and experience intimacy all play a role. Consent culture has brought important awareness and encouraged people to honor their boundaries and speak their truth, which is deeply meaningful. At the same time, it has also led to a growing hesitation around physical touch, with some people unsure of how to engage without sending the wrong message.
+<br/><br/>
+As our collective understanding of consent deepens, there’s a beautiful opportunity to become more intentional and skillful in how we communicate and relate. Cuddling offers a supportive space to explore those personal boundaries, strengthen communication skills, and nurture healthier relationships through clear, caring touch.
+<br/><br/>
+It’s also a space for co-regulation, as sharing presence with a calm, grounded person can help your nervous system soften and settle. Many people move through their days in a low-grade state of stress (fight, flight, freeze, or fawn) without even realizing it. Therapeutic touch can invite the body into a parasympathetic state, helping you feel safe, connected, and at ease. It can lower stress hormones, release oxytocin (the bonding hormone), and offer a deep sense of emotional well-being.
+      </div>
+    
+    <div class="about-container">
+      <h2 id="benefits">Benefits of Regular Cuddling</h2>
+      <div class="benefits-columns">
+        <ul>
+          <li>Boosts immune system</li>
+          <li>Improves sleep quality</li>
+          <li>Calms heart rate</li>
+          <li>Lowers blood pressure</li>
+          <li>Reduces risk of heart disease</li>
+          <li>Improves circulation</li>
+          <li>Eases chronic pain</li>
+          <li>Improves skin health</li>
+          <li>Reduces inflammation</li>
+          <li>Improves digestion and weight loss</li>
+          <li>Relieves joint and muscle tension</li>
+          <li>Supports physical recovery</li>
+        </ul>
+        <ul>
+          <li>Decreases stress</li>
+          <li>Reduces general anxiety</li>
+          <li>Improves self-esteem</li>
+          <li>Increases motivation</li>
+          <li>Improves concentration</li>
+          <li>Eases symptoms of PTSD</li>
+          <li>Eases feelings of depression</li>
+          <li>Enhances emotional resilience</li>
+          <li>Reduces cravings and compulsions</li>
+          <li>Promotes relaxation and calm</li>
+          <li>Slows the aging process</li>
+          <li>May extend lifespan</li>
+        </ul>
+        <ul>
+          <li>Improves social confidence</li>
+          <li>Enhances ability to trust</li>
+          <li>Improves communication skills</li>
+          <li>Reduces social anxiety</li>
+          <li>Supports emotional regulation</li>
+          <li>Inhibits cortisol (stress hormone)</li>
+          <li>Releases oxytocin (bonding hormone)</li>
+          <li>Releases serotonin (mood stabilizer)</li>
+          <li>Releases dopamine (pleasure chemical)</li>
+          <li>Balances overall hormone levels</li>
+          <li>Fosters emotional connection</li>
+          <li>Promotes feelings of safety</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; <span id="year"></span> by Cuddly Kathy |
+    <a href="mailto:cuddlykathy@gmail.com">cuddlykathy@gmail.com</a> | Vancouver, BC, Canada
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    window.addEventListener('load', () => {
+      const overlay = document.getElementById('loading-overlay');
+      if (overlay) overlay.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>

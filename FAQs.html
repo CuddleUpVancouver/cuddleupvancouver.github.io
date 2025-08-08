@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FAQs | Cuddle Up Vancouver – Healing with Professional Cuddling Services</title>
+  <meta name="description" content="Find answers to frequently asked questions about Cuddle Up Vancouver's professional cuddling services, policies, and what to expect during your session.">
+  <link rel="icon" href="images/Cuddling%20Icon.JPG" type="image/jpg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #2d6a97; /* ensures full-page dark blue */
+}
+
+body > footer {
+  margin-top: auto; /* push footer to bottom */
+}
+
+    /* FAQ PAGE STYLES */
+    .faq-header {
+      background-color: #2d6a97;
+      color: white;
+      text-align: center;
+      padding: 30px 20px 15px;
+    }
+
+    .faq-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+      .faq-header p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      max-width: 900px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 20px;
+    }
+
+    .faq-header .note {
+      font-size: 1rem;
+      font-style: italic;
+      margin-top: 10px;
+      margin-bottom: 0;
+      color: white;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 20px;
+    }
+    
+    .faq-section {
+      background-color: #2d6a97;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
+    .faq-container {
+      background: #eff3f7;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 900px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      color: #2d6a97;
+    }
+
+    .faq-tabs {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+
+    .faq-tab {
+      background-color: #2d6a97;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-family: Arial, sans-serif;
+      font-size: 1.125rem;
+    }
+
+    .faq-tab.active {
+      background-color: #1b4a70;
+    }
+
+    .faq-category {
+      display: none;
+    }
+
+    .faq-category.active {
+      display: block;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+    }
+
+    .faq-question {
+      cursor: pointer;
+      font-weight: bold;
+      background-color: #d4e1ee;
+      padding: 12px;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+      font-family: Arial, sans-serif;
+      font-size: 1.125rem;
+      position: relative;
+    }
+
+    .faq-question::after {
+      content: "▼";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.9rem;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 10px;
+      background-color: #ffffff;
+      border-left: 3px solid #2d6a97;
+      margin-top: 5px;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+      color: #1b4a70;
+    }
+
+    .faq-question:hover {
+      background-color: #c3d5e5;
+    }
+    
+.faq-answer a {
+  color: #2d6a97;
+  text-decoration: underline; /* underline always */
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.faq-answer a:hover {
+  color: #3a7db2; /* slightly lighter blue on hover */
+}
+    .faq-question.open + .faq-answer {
+      display: block;
+    }
+
+    .contact-btn {
+      margin: 30px auto 0;
+      background-color: #2d6a97;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1.125rem;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      font-family: Arial, sans-serif;
+      display: inline-block;
+    }
+
+    .contact-btn:hover {
+      background-color: #1b4a70;
+    }
+
+    .faq-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 40px; /* adds space below the light blue box */
+    }
+
+    footer {
+      background-color: #2d6a97;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-overlay">
+    <div class="loading-content">
+      <img src="images/CuddleUpVancouver%20Logo.png" alt="Cuddle Up Vancouver Logo" class="loading-logo" />
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-title">
+      <img src="images/CuddleUpVancouver%20Logo.png" alt="Cuddle Up Vancouver Logo" class="logo" />
+      <div class="site-title">
+        <span class="title-line1">Cuddle Up</span>
+        <span class="title-line2">Vancouver</span>
+      </div>
+    </div>
+    <div class="hamburger">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="guidelines.html">Guidelines</a></li>
+      <li><a href="FAQs.html">FAQs</a></li>
+      <li><a href="rates.html">Rates</a></li>
+      <li><a href="contact.html" class="book-now-btn">Book Now!</a></li>
+    </ul>
+  </nav>
+
+  <!-- FAQ Header -->
+  <section class="faq-header">
+    <h1>Frequently Asked Questions</h1>
+    <p>
+      Here you'll find answers to the most common questions about my cuddle services.
+    </p>
+        <p class="note">
+    If something isn’t clear or you want to know more, please feel free to reach out anytime!
+        </p>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="faq-wrapper">
+      <div class="faq-container">
+        <div class="faq-tabs">
+          <button class="faq-tab active" data-category="logistics">Location / Logistics</button>
+          <button class="faq-tab" data-category="what">What is this?</button>
+          <button class="faq-tab" data-category="allowed">What is allowed?</button>
+          <button class="faq-tab" data-category="whatif">What if?</button>
+        </div>
+
+        
+        <!-- FAQ Categories -->
+        <div id="logistics" class="faq-category active">
+          <div class="faq-item">
+            <div class="faq-question">Where are sessions held?</div>
+            <div class="faq-answer">I host in my spa-like cuddle zone on the New Westminster Quay, conveniently a 5-minute walk from New Westminster Skytrain Station and with a beautiful direct view of the Fraser River. I am no longer doing outcalls at this time and I do not cuddle in public locations, the only exception being inside the nearby movie theatre during off-peak times.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Is there parking nearby?</div>
+            <div class="faq-answer">Yes, there is plenty of paid parking at $2.50/hour directly outside my building, or free parking further down on Quayside Drive a short walk away.</div>
+          </div>
+             <div class="faq-item">
+            <div class="faq-question">How long are your sessions? Are there discounts for longer sessions?</div>
+            <div class="faq-answer">They are as long as you wish! Pricing remains the same per hour no matter the number of hours. Details are on the <a href="rates.html">rates</a> page. If cuddling for greater than 3 hours, I do request that the client plan to provide a meal for us both during the session.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What are your hours of operation?</div>
+            <div class="faq-answer">As I am presently a student with an inconsistent schedule, I can flexibly cuddle any time between 7AM - 11PM.<br/><br/>
+              I go to sleep at 11PM, and therefore only overnight sessions per the <a href="rates.html">rates</a> page are available after that point.<br/><br/>
+              My schedule can fill up quickly with school, personal life, or other cuddle bookings, so it is always best to book a few days early, but there is no harm in asking if I am available for a last minute session.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Do you put clean sheets on the bed?</div>
+            <div class="faq-answer">Yes, I maintain a hygienic practice of replacing clean sheets after every client, just as a massage therapist would do.</div>
+          </div>
+          </div>
+        
+        <div id="what" class="faq-category">
+          <div class="faq-item">
+            <div class="faq-question">What is a cuddle session like?</div>
+            <div class="faq-answer">At the beginning of the first session, we will share space and get comfortable being close before we start to cuddle. When you feel ready we can begin with a hug and lay down to cozy up to each other.<br/><br/>
+You are encouraged to take the lead in the session, but if you aren't sure what you want, I can make suggestions. While we cuddle we can talk, doze off, listen to music, watch a movie or TV show. I am happy to provide massages on request, but I am not trained as a massage therapist. This means that massages from me are only to help you relax, and not to solve any deep tissue problems that may need a specialist.<br/><br/>
+Cuddle sessions are a platonic (non-sexual) experience. This is great if you are looking for a warm, nurturing, and accepting environment, but not so great if you are looking to get your sexual needs met. Please review the <a href="guidelines.html">guidelines</a> to ensure that this is right for you. </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Is this confidential?</div>
+            <div class="faq-answer">Yes. I do not speak about my work as a platonic cuddle therapist outside of our cuddle sessions at all. Clients tell me their most intimate secrets, and as a professional, I respect and honour them by not discussing them with anyone.
+              <br/><br/>The only time I may break confidentiality is if there is a safety concern, such as if a client violates the guidelines and engages in unwelcome sexual touching.</div>
+          </div>
+                      <div class="faq-item">
+            <div class="faq-question">Is this therapy?</div>
+            <div class="faq-answer">Platonic cuddle therapy is therapeutic, yes, in the same way that massage therapy is therapeutic through touch. It is also therapeutic in the sense that I have a psychology degree and other relevant trainings and experience that make me a great source of emotional support, and many clients find our conversations during cuddling to be helpful for their overall wellbeing and personal growth.
+              <br/><br/>It's important to clarify that I cannot walk you through standardized therapy techniques like CBT, DBT, etc. I do not presently have the requisite licensing, and if I did, that would preclude me from cuddling with clients given the standard physical boundaries in regulated mental health professions.
+</div>
+          </div>
+            <div class="faq-item">
+            <div class="faq-question">Do you record cuddle sessions?</div>
+            <div class="faq-answer">Although I understand some professional cuddlers video record their sessions for their safety, I do not. I believe my screening process ensures my safety, and my building does have a security camera and a concierge in the lobby.
+</div>
+          </div>
+            <div class="faq-item">
+            <div class="faq-question">What qualifies you as a cuddle professional?</div>
+            <div class="faq-answer">I have training and experience to maximize the emotional and physical health benefits of cuddling while upholding boundaries so we can enjoy cuddling in a warm, fuzzy, friendly way without it ever getting sexual. I make communication around cuddling and platonic intimacy simple so there are never any hard feelings or mixed signals. You can read more about me on the <a href="about.html">about</a> page.
+</div>
+          </div>
+        </div>
+
+        <div id="allowed" class="faq-category">
+                  <div class="faq-item">
+            <div class="faq-question">What should I wear?</div>
+            <div class="faq-answer">I suggest you wear something comfortable enough to sleep in that is also decent enough to go outside in. Any shirt and shorts or sweatpants are a great option. The minimum clothing is a tank top and shorts. Boxers/undergarments are not a substitute for shorts.
+            </div>
+          </div>
+                            <div class="faq-item">
+            <div class="faq-question">What will you wear?</div>
+            <div class="faq-answer">I will follow the same guidelines for clothing as you. I generally wear leggings and a soft long-sleeved shirt. I do not take clothing requests except for clients who have allergies to certain fabrics or clients who book the skin-to-skin enhancement per the <a href="rates.html">rates</a> page. Please keep in mind that skin-to-skin involves me wearing a tank top and shorts. I never wear anything sexy, as the sessions must always remain platonic.</div>
+          </div>
+           <div class="faq-item">
+            <div class="faq-question">What do we wear during a massage?</div>
+            <div class="faq-answer">If you request a massage, we will wear exactly what we wear during the cuddle. During a regular cuddle, the massage will be provided over top of clothing. If you book the skin-to-skin enhancement per the <a href="rates.html">rates</a> page, then we will be cuddling in a tank top and shorts, and you may remove your <i>shirt only</i> during the <i>massage portion only</i>. Your top needs to be back on during cuddling before or after massage.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Can I kiss you? Can I touch your breasts, buttocks, genitals?</div>
+            <div class="faq-answer">Absolutely no kissing of any kind is permitted, and there is to be no touch of any sexual areas like breasts, buttocks, or genitals. You must demonstrate self-control when a woman has expressed firm boundaries. If at any point you lose control of your urges, you will be forfeiting your session, as we will end early without a refund for remaining time.</div>
+          </div>
+            <div class="faq-item">
+            <div class="faq-question">Can I drink, smoke, or use drugs?</div>
+            <div class="faq-answer">I am sensitive to strong smells, so I request that clients do not smoke anything before or during cuddle sessions and show up with good hygiene (ie. have a shower if you just went to the gym). Mind-altering substances are not allowed, as I need you to be fully capable of consenting to cuddling.<br/><br/>
+            Some clients like to bring a bottle of wine to share as a way to ease into the experience. If the bottle is unopened on arrival, I am happy to partake, with a limit of 1 glass per hour so we can both stay present and grounded throughout our time together.<br/><br/>
+When we meet for the first time we will take our time to chat and get comfortable with one another, and you decide when you are ready to begin cuddling. My hope is that you will become comfortable enough to enjoy the experience without feeling the need for alcohol to ease your nerves. </div>
+          </div>
+            <div class="faq-item">
+            <div class="faq-question">Can I tip you or bring you gifts?</div>
+            <div class="faq-answer">Your respectful presence is a great gift, and there's absolutely no expectation for anything more. That said, on rare occasions, someone wants to provide a small gift. Feel free to ask me about my preferences, so your gesture is both meaningful and comfortable for us both.</div>
+          </div>
+        </div>
+
+        <div id="whatif" class="faq-category">
+          <div class="faq-item">
+            <div class="faq-question">What if I get aroused?</div>
+            <div class="faq-answer">Arousal during cuddling is normal. As with any professional in the area of platonic touch, I do not judge or get upset about it. If your body gets aroused, we will not act on it and we will ignore it. If you have an erection, which is a natural physiological reaction that happens sometimes during cuddling, we will make sure to be in a position where I am not coming into contact with it. Humping/grinding is prohibited. If necessary, we can take a break so you can cool off.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What if I cry during the session?</div>
+            <div class="faq-answer">This is a normal reaction during cuddling, especially for those going through a breakup or other significant stressors. I am here to help you, so I can have tissues at the ready if you need to cry. I will be your shoulder to cry on and lend my emotional support.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What if I don't feel ready to cuddle or need a break?</div>
+            <div class="faq-answer">You are never forced to cuddle or do anything you don't want to do in a session. We will always go at your pace; we can begin to cuddle when you say you are ready or take breaks when you need it. If you just want to share space and talk without cuddling, that's okay too.</div>
+          </div>
+                    <div class="faq-item">
+            <div class="faq-question">What if I want to extend the session or leave early?</div>
+            <div class="faq-answer">I may be able to extend the session if I have the time. If you think you might want a longer session, it's best to let me know ahead of time so I can block that time off for you. <br/><br/>
+You can end the session at any time for any reason but you will not receive a refund for the remaining time if you choose to end the session early.</div>
+          </div>
+                    <div class="faq-item">
+            <div class="faq-question">What if I want to date you?</div>
+            <div class="faq-answer">I do not date clients, just as massage therapists, psychologists, doctors, or dentists do not date clients despite engaging with people in intimate ways. This is not a personal rejection, this is a professional boundary for mutual protection, given the unique dynamics at play once there has been an exchange of money for services.
+              <br/><br/>Sometimes clients try to get around this by ceasing the professional cuddle relationship in order to justify beginning a personal relationship. This workaround does not work; I do not date clients, whether past or present. The only way to see me is to book a cuddle session or <a href="rates.html">platonic social time</a>.</div>
+          </div>
+        </div>
+
+        <div style="text-align:center;">
+          <a href="contact.html" class="contact-btn">I have a different question</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; <span id="year"></span> by Cuddly Kathy |
+    <a href="mailto:cuddlykathy@gmail.com">cuddlykathy@gmail.com</a> | Vancouver, BC, Canada
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    window.addEventListener('load', () => {
+      const overlay = document.getElementById('loading-overlay');
+      if (overlay) overlay.classList.add('hidden');
+    });
+
+    // FAQ Tab Switcher
+    const tabs = document.querySelectorAll('.faq-tab');
+    const categories = document.querySelectorAll('.faq-category');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        categories.forEach(cat => cat.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.category).classList.add('active');
+      });
+    });
+
+    // Toggle Questions
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        question.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+</html>

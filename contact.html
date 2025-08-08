@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Cuddle Up Vancouver – Healing with Professional Cuddling Services</title>
+  <meta name="description" content="Cuddle Up Vancouver offers professional cuddle therapy for emotional comfort, stress relief, and physical health benefits in Vancouver, BC. Book your healing experience today.">
+  <link rel="icon" href="images/Cuddling%20Icon.JPG" type="image/jpg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* CONTACT PAGE STYLES */
+    .contact-header {
+      background-color: #2d6a97;
+      color: white;
+      text-align: center;
+      padding: 30px 20px 15px;
+    }
+
+    .contact-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-header p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-header .note {
+      font-size: 1rem;
+      font-style: italic;
+      margin-top: 10px;
+      margin-bottom: 0;
+      color: white;
+    }
+
+    /* Section for image */
+    .contact-image-section {
+      background-color: #2d6a97;
+      display: flex;
+      justify-content: center;
+      padding: 15px 20px;
+    }
+
+    .contact-image-wrapper {
+      max-width: 700px;
+      width: 100%;
+    }
+
+    .contact-image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 2px solid #eff3f7;
+      border-radius: 10px;
+    }
+
+    /* Dark blue section for form */
+    .contact-form-section {
+      background-color: #2d6a97;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 250px);
+    }
+
+    /* Light blue card for Google Form */
+    .google-form-container {
+      background: #eff3f7;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .google-form-container iframe {
+      width: 100%;
+      height: 1090px;
+      border: none;
+    }
+
+    /* Mobile height adjustment */
+    @media (max-width: 768px) {
+      .google-form-container iframe {
+        height: 1315px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-overlay">
+    <div class="loading-content">
+      <img src="images/CuddleUpVancouver%20Logo.png" alt="Cuddle Up Vancouver Logo" class="loading-logo" />
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-title">
+      <img src="images/CuddleUpVancouver%20Logo.png" alt="Cuddle Up Vancouver Logo" class="logo" />
+      <div class="site-title">
+        <span class="title-line1">Cuddle Up</span>
+        <span class="title-line2">Vancouver</span>
+      </div>
+    </div>
+    <div class="hamburger">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="guidelines.html">Guidelines</a></li>
+      <li><a href="FAQs.html">FAQs</a></li>
+      <li><a href="rates.html">Rates</a></li>
+      <li><a href="contact.html" class="book-now-btn">Book Now!</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Header -->
+  <section class="contact-header">
+    <h1>Contact</h1>
+    <p>Send me a message to ask any questions or book a cuddle session!</p>
+    <p class="note">
+      Please note that for all new clients, a 5-minute Zoom screening must be scheduled before we can begin cuddling in-person.
+    </p>
+  </section>
+
+  <!-- Contact Image Section (dark blue background) -->
+  <section class="contact-image-section">
+    <div class="contact-image-wrapper">
+      <img src="https://cuddleupvancouver.github.io/images/Cuddle%20Profile.jpg" alt="Cuddly Kathy">
+          <p style="text-align: center; font-size: 0.8rem; color: white; margin: 10px 0 0 0;">
+      Let's enjoy a scenic sunset cuddle together!
+    </p>
+    </div>
+  </section>
+
+  <!-- Google Form Section -->
+  <section class="contact-form-section">
+    <div class="google-form-container">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZdjtVEb0UkJmYadUcwwe9VhLvI8WNKh2QtBmPfvOEjczmrw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; <span id="year"></span> by Cuddly Kathy |
+    <a href="mailto:cuddlykathy@gmail.com">cuddlykathy@gmail.com</a> | Vancouver, BC, Canada
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    window.addEventListener('load', () => {
+      const overlay = document.getElementById('loading-overlay');
+      if (overlay) {
+        overlay.classList.add('hidden');
+      }
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
