@@ -8,25 +8,6 @@
   <link rel="icon" href="images/Cuddling%20Icon.JPG" type="image/jpg" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    /* Ensure full height for flex layout */
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-    }
-
-    .page-content {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-    }
-
     /* RATES PAGE STYLES */
     .rates-header {
       background-color: #2d6a97;
@@ -53,15 +34,13 @@
       color: white;
     }
 
-    /* This section grows to fill available vertical space */
     .rates-section {
       background-color: #2d6a97;
       padding: 20px 20px 30px;
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      flex-grow: 1;
-      box-sizing: border-box;
+      min-height: calc(100vh - 250px);
     }
 
     .rates-container {
@@ -97,96 +76,22 @@
       color: #1b4a70;
     }
 
-    @media (min-width: 768px) {
-      .rates-container table th:nth-child(1),
-      .rates-container table td:nth-child(1) {
-        width: 20%;
-      }
+   @media (min-width: 768px) {
+  .rates-container table th:nth-child(1),
+  .rates-container table td:nth-child(1) {
+    width: 20%;
+  }
 
-      .rates-container table th:nth-child(2),
-      .rates-container table td:nth-child(2) {
-        width: 50%;
-      }
+  .rates-container table th:nth-child(2),
+  .rates-container table td:nth-child(2) {
+    width: 50%;
+  }
 
-      .rates-container table th:nth-child(3),
-      .rates-container table td:nth-child(3) {
-        width: 30%;
-      }
-    }
-
-    /* Footer styling */
-    footer {
-      background-color: #2d6a97;
-      color: white;
-      text-align: center;
-      padding: 15px 20px;
-      font-size: 0.9rem;
-      flex-shrink: 0;
-    }
-
-    /* Navbar styling - unchanged */
-    .navbar {
-      background-color: #1b4a70;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    /* Example navbar contents styling (optional, keep as in your original CSS) */
-    .logo-title {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo {
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    .site-title .title-line1,
-    .site-title .title-line2 {
-      display: block;
-      line-height: 1;
-    }
-
-    .site-title .title-line1 {
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-
-    .site-title .title-line2 {
-      font-size: 1rem;
-    }
-
-    .hamburger {
-      cursor: pointer;
-      font-size: 24px;
-      user-select: none;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 15px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-links li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .book-now-btn {
-      background-color: #f04e23;
-      padding: 8px 15px;
-      border-radius: 5px;
-      color: white;
-      font-weight: bold;
-    }
+  .rates-container table th:nth-child(3),
+  .rates-container table td:nth-child(3) {
+    width: 30%;
+  }
+}
   </style>
 </head>
 <body>
@@ -218,75 +123,72 @@
     </ul>
   </nav>
 
-  <!-- Page content wrapper -->
-  <div class="page-content">
-    <!-- Rates Header -->
-    <section class="rates-header">
-      <h1>Rates</h1>
-      <p>
-        All cuddle sessions are hosted in my spa-like cuddle zone. All cuddles include warm hugs and soft caresses.<br />
-        Sessions can be quiet and in relative stillness, or sessions can include free optionals per the client's preferences:<br />
-        supportive talk, soothing spa music, TV or movies, comforting finger tracing experience, and clothed relaxation massage.
-      </p>
-      <p class="note">
-        Payment is due in full at the beginning of a booking before we start our time together. Please see rates below.
-      </p>
-    </section>
+  <!-- Rates Header -->
+  <section class="rates-header">
+    <h1>Rates</h1>
+    <p>
+      All cuddle sessions are hosted in my spa-like cuddle zone. All cuddles include warm hugs and soft caresses.<br />
+      Sessions can be quiet and in relative stillness, or sessions can include free optionals per the client's preferences:<br />
+      supportive talk, soothing spa music, TV or movies, comforting finger tracing experience, and clothed relaxation massage.
+    </p>
+    <p class="note">
+      Payment is due in full at the beginning of a booking before we start our time together. Please see rates below.
+    </p>
+  </section>
 
-    <!-- Rates Table Section -->
-    <section class="rates-section">
-      <div class="rates-container">
-        <table>
-          <tr>
-            <th>Service</th>
-            <th>Description</th>
-            <th>Rate</th>
-          </tr>
-          <tr>
-            <td>Zoom Screening</td>
-            <td>5-minute screening with all new clients</td>
-            <td>Free!</td>
-          </tr>
-          <tr>
-            <td>First-Time Cuddle</td>
-            <td>For those exploring their first professional cuddle</td>
-            <td>$100/hr</td>
-          </tr>
-          <tr>
-            <td>Regular Cuddle</td>
-            <td>I wear a soft long-sleeved top and cozy leggings</td>
-            <td>$150/hr</td>
-          </tr>
-          <tr>
-            <td>Skin-to-Skin*</td>
-            <td>Enhance the oxytocin – I wear a tank top and shorts</td>
-            <td>+$50/hr</td>
-          </tr>
-          <tr>
-            <td>Cuddle Sleepover</td>
-            <td>Sleep soundly with a platonic overnight cuddle</td>
-            <td>$100/hr**, minimum 8 hours</td>
-          </tr>
-          <tr>
-            <td>Social Time</td>
-            <td>Platonic company for an event, dinner, or other activity, without public touching or cuddling</td>
-            <td>$50/hr including travel time (expenses covered by client)</td>
-          </tr>
-        </table>
+  <!-- Rates Table Section -->
+  <section class="rates-section">
+    <div class="rates-container">
+      <table>
+        <tr>
+          <th>Service</th>
+          <th>Description</th>
+          <th>Rate</th>
+        </tr>
+        <tr>
+          <td>Zoom Screening</td>
+          <td>5-minute screening with all new clients</td>
+          <td>Free!</td>
+        </tr>
+        <tr>
+          <td>First-Time Cuddle</td>
+          <td>For those exploring their first professional cuddle</td>
+          <td>$100/hr</td>
+        </tr>
+        <tr>
+          <td>Regular Cuddle</td>
+          <td>I wear a soft long-sleeved top and cozy leggings</td>
+          <td>$150/hr</td>
+        </tr>
+        <tr>
+          <td>Skin-to-Skin*</td>
+          <td>Enhance the oxytocin – I wear a tank top and shorts</td>
+          <td>+$50/hr</td>
+        </tr>
+        <tr>
+          <td>Cuddle Sleepover</td>
+          <td>Sleep soundly with a platonic overnight cuddle</td>
+          <td>$100/hr**, minimum 8 hours</td>
+        </tr>
+        <tr>
+          <td>Social Time</td>
+          <td>Platonic company for an event, dinner, or other activity, without public touching or cuddling</td>
+          <td>$50/hr including travel time (expenses covered by client)</td>
+        </tr>
+      </table>
 
-        <p class="small-note">
-          *Skin-to-skin remains a non-sexual service. Both parties wear shorts and a tank top in order to maximize the body's release of happy, healthy hormones like oxytocin through increased skin contact. Clothes stay on, are not revealing or sexy, and arousal is avoided.
-          <br /><br />
-          **For a regular clothing cuddle sleepover. For an innocent skin-to-skin overnight cuddle, add +$50/hr.
-        </p>
-      </div>
-    </section>
-  </div>
+      <p class="small-note">
+        *Skin-to-skin remains a non-sexual service. Both parties wear shorts and a tank top in order to maximize the body's release of happy, healthy hormones like oxytocin through increased skin contact. Clothes stay on, are not revealing or sexy, and arousal is avoided.
+        <br /><br />
+        **For a regular clothing cuddle sleepover. For an innocent skin-to-skin overnight cuddle, add +$50/hr.
+      </p>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
     &copy; <span id="year"></span> by Cuddly Kathy |
-    <a href="mailto:cuddlykathy@gmail.com" style="color: white; text-decoration: underline;">cuddlykathy@gmail.com</a> | Vancouver, BC, Canada
+    <a href="mailto:cuddlykathy@gmail.com">cuddlykathy@gmail.com</a> | Vancouver, BC, Canada
   </footer>
 
   <!-- JavaScript -->
