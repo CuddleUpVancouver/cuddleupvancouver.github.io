@@ -8,7 +8,7 @@
   <link rel="icon" href="images/Cuddling%20Icon.JPG" type="image/jpg" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    /* Make body a flex column with sticky footer */
+    /* Sticky footer layout */
     html, body {
       height: 100%;
       margin: 0;
@@ -21,14 +21,14 @@
       font-family: Arial, sans-serif;
     }
 
-    /* Container for all page content except footer */
+    /* Main content grows between navbar and footer */
     .page-content {
-      flex: 1 0 auto; /* grow and fill available space */
+      flex: 1 0 auto;
       display: flex;
       flex-direction: column;
     }
 
-    /* Navbar styles (assuming from your CSS file) */
+    /* Navbar styling */
     .navbar {
       background-color: #1b4a70;
       color: white;
@@ -38,7 +38,7 @@
       align-items: center;
     }
 
-    /* Rates header styles */
+    /* Rates header */
     .rates-header {
       background-color: #2d6a97;
       color: white;
@@ -64,18 +64,18 @@
       color: white;
     }
 
-    /* Rates section fills remaining vertical space */
+    /* Rates section fills remaining height */
     .rates-section {
       background-color: #2d6a97;
       padding: 20px 20px 30px;
-      flex: 1 0 auto; /* grow to fill remaining height */
+      flex: 1 0 auto;
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      box-sizing: border-box; /* include padding in height */
+      box-sizing: border-box;
     }
 
-    /* Light blue container */
+    /* Light blue container inside rates section */
     .rates-container {
       background: #eff3f7;
       padding: 20px;
@@ -86,7 +86,7 @@
       color: #1b4a70;
     }
 
-    /* Table styling */
+    /* Table styles */
     table {
       width: 100%;
       border-collapse: collapse;
@@ -128,9 +128,9 @@
       }
     }
 
-    /* Footer at bottom, styled with matching background */
+    /* Footer pinned at bottom */
     footer {
-      flex-shrink: 0; /* do not shrink */
+      flex-shrink: 0;
       background-color: #2d6a97;
       color: white;
       text-align: center;
@@ -148,7 +148,7 @@
     </div>
   </div>
 
-  <!-- Navbar -->
+  <!-- Navbar (outside page-content for proper layout) -->
   <nav class="navbar">
     <div class="logo-title">
       <img src="images/CuddleUpVancouver%20Logo.png" alt="Cuddle Up Vancouver Logo" class="logo" />
@@ -168,7 +168,7 @@
     </ul>
   </nav>
 
-  <!-- Main page content wrapper -->
+  <!-- Page content wrapper -->
   <div class="page-content">
     <!-- Rates Header -->
     <section class="rates-header">
