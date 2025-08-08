@@ -8,20 +8,6 @@
   <link rel="icon" href="images/Cuddling%20Icon.JPG" type="image/jpg" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    /* Keep full height and remove margin */
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
-
-    /* Make body a column flex container */
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-    }
-
     /* RATES PAGE STYLES */
     .rates-header {
       background-color: #2d6a97;
@@ -48,16 +34,13 @@
       color: white;
     }
 
-    /* Make rates-section grow to fill leftover space */
     .rates-section {
       background-color: #2d6a97;
       padding: 20px 20px 30px;
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      flex-grow: 1;
-      /* min-height removed */
-      box-sizing: border-box;
+      min-height: calc(100vh - 370px);
     }
 
     .rates-container {
@@ -93,95 +76,22 @@
       color: #1b4a70;
     }
 
-    @media (min-width: 768px) {
-      .rates-container table th:nth-child(1),
-      .rates-container table td:nth-child(1) {
-        width: 20%;
-      }
+   @media (min-width: 768px) {
+  .rates-container table th:nth-child(1),
+  .rates-container table td:nth-child(1) {
+    width: 20%;
+  }
 
-      .rates-container table th:nth-child(2),
-      .rates-container table td:nth-child(2) {
-        width: 50%;
-      }
+  .rates-container table th:nth-child(2),
+  .rates-container table td:nth-child(2) {
+    width: 50%;
+  }
 
-      .rates-container table th:nth-child(3),
-      .rates-container table td:nth-child(3) {
-        width: 30%;
-      }
-    }
-
-    /* Footer styling */
-    footer {
-      background-color: #2d6a97;
-      color: white;
-      text-align: center;
-      padding: 15px 20px;
-      font-size: 0.9rem;
-      flex-shrink: 0;
-    }
-
-    /* Navbar styling - unchanged */
-    .navbar {
-      background-color: #1b4a70;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo-title {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo {
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    .site-title .title-line1,
-    .site-title .title-line2 {
-      display: block;
-      line-height: 1;
-    }
-
-    .site-title .title-line1 {
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-
-    .site-title .title-line2 {
-      font-size: 1rem;
-    }
-
-    .hamburger {
-      cursor: pointer;
-      font-size: 24px;
-      user-select: none;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 15px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-links li a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .book-now-btn {
-      background-color: #f04e23;
-      padding: 8px 15px;
-      border-radius: 5px;
-      color: white;
-      font-weight: bold;
-    }
+  .rates-container table th:nth-child(3),
+  .rates-container table td:nth-child(3) {
+    width: 30%;
+  }
+}
   </style>
 </head>
 <body>
@@ -278,7 +188,7 @@
   <!-- Footer -->
   <footer>
     &copy; <span id="year"></span> by Cuddly Kathy |
-    <a href="mailto:cuddlykathy@gmail.com" style="color: white; text-decoration: underline;">cuddlykathy@gmail.com</a> | Vancouver, BC, Canada
+    <a href="mailto:cuddlykathy@gmail.com">cuddlykathy@gmail.com</a> | Vancouver, BC, Canada
   </footer>
 
   <!-- JavaScript -->
